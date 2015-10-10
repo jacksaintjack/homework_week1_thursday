@@ -4,6 +4,29 @@
   font-size: 1.5em;
 }
 
+@mixin boxDesign{
+  .outerBox{
+    height:100%;
+    float:left;
+    margin-right:1.1%;
+    color:white;
+    text-align: center;
+    font-size: 1.2em;
+
+      .innerBox{
+        width: 2em;
+        height:100%;
+        float:left;
+        color:white;
+        text-align: center;
+        font-size: 1.2em;
+      }
+      .boxText{
+        margin-top:4%
+      }
+  }
+}
+
   //Header Style
   * {
     box-sizing: border-box;
@@ -96,8 +119,73 @@ article .articleTitle{
 
 .impactText{
   border-left:1px solid gray;
+  font-size: 2.5em;
+  margin-top: 4%;
+  height: 2em;
+  padding-top:2%;
 }
 
 .impactText span{
   color:#106DB3;
+  margin-left:2.9%
+}
+
+.paragraphTwo{
+  @include paragraphColor;
+  margin-top:5%;
+}
+
+.paragraphTwo a{
+  text-decoration: underline;
+}
+
+.paragraphTwo>p{
+  margin-top: 4%;
+}
+
+.socialMediaButtons{;
+  height:40px;
+  width:100%;
+  margin: 3% 0 0 0.1%;
+  float: left;
+  @include boxDesign;
+
+}
+
+.comments{
+  width: 25.8%;
+  background:#A3B3BF;
+
+  .innerBox{
+    padding-top:2.5%;
+    background:#5E686F;
+  }
+}
+
+.upload{
+  width:22.1%;
+  background:#A3B3BF;
+
+  .innerBox{
+    padding-top:4%;
+    background:#5E686F;
+  }
+}
+
+.share{
+  width: 25.8%;
+  background:#106DB3;
+
+
+  .innerBox{
+    padding-top:3.7%;
+    background:#083452;
+  }
+}
+
+//Aside Styles
+
+aside{
+  background:black;
+  float:right;
 }

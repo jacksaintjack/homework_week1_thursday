@@ -71,7 +71,70 @@ article .articleTitle {
   margin-top: 6%; }
 
 .impactText {
-  border-left: 1px solid gray; }
+  border-left: 1px solid gray;
+  font-size: 2.5em;
+  margin-top: 4%;
+  height: 2em;
+  padding-top: 2%; }
 
 .impactText span {
-  color: #106DB3; }
+  color: #106DB3;
+  margin-left: 2.9%; }
+
+.paragraphTwo {
+  color: #5E686F;
+  font-size: 1.5em;
+  margin-top: 5%; }
+
+.paragraphTwo a {
+  text-decoration: underline; }
+
+.paragraphTwo > p {
+  margin-top: 4%; }
+
+.socialMediaButtons {
+  height: 40px;
+  width: 100%;
+  margin: 3% 0 0 0.1%;
+  float: left; }
+  .socialMediaButtons .outerBox {
+    height: 100%;
+    float: left;
+    margin-right: 1.1%;
+    color: white;
+    text-align: center;
+    font-size: 1.2em; }
+    .socialMediaButtons .outerBox .innerBox {
+      width: 2em;
+      height: 100%;
+      float: left;
+      color: white;
+      text-align: center;
+      font-size: 1.2em; }
+    .socialMediaButtons .outerBox .boxText {
+      margin-top: 4%; }
+
+.comments {
+  width: 25.8%;
+  background: #A3B3BF; }
+  .comments .innerBox {
+    padding-top: 2.5%;
+    background: #5E686F; }
+
+.upload {
+  width: 22.1%;
+  background: #A3B3BF; }
+  .upload .innerBox {
+    padding-top: 4%;
+    background: #5E686F; }
+
+.share {
+  width: 25.8%;
+  background: #106DB3; }
+  .share .innerBox {
+    padding-top: 3.7%;
+    background: #083452; }
+
+aside {
+  background: black;
+  float: right; }
