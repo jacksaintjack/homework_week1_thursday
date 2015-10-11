@@ -27,6 +27,13 @@
   }
 }
 
+@mixin postTextStyle{
+  float: left;
+  font-size: 0.4em;
+  font-family: 'Oswald', sans-serif;
+  text-shadow: 2px 1px 6px white;
+  color:black;
+}
   //Header Style
   * {
     box-sizing: border-box;
@@ -67,7 +74,7 @@ hgroup h5{
 // Main Style
 main{
   width:100%;
-  height: 1292px;
+  height: 92.7em;
   border-bottom: 1px solid gray;
 }
 
@@ -248,4 +255,95 @@ figure figcaption{
 .sideBarText span:nth-child(1){
   text-decoration: underline;
 
+}
+
+// Post nav style
+
+.postNav{
+  font-size: 4.5em;
+  font-weight: bolder;
+  color: #083452;
+  padding: 3% 0 0 0;
+}
+.picNav{
+  padding:0%;
+  margin-top:2.9%;
+}
+.picNav li{
+  display:inline-block;
+  height:100%;
+  padding:0;
+  height: 6.67em;
+  background:#106DB3;
+}
+
+.picNav li:nth-child(1){
+  background:linear-gradient(
+    rgba(0, 0, 255, 0.25),
+    rgba(0, 0, 255, 0.25)),
+    url('../assets/article-image-1.jpg');
+    background-size: cover;
+}
+
+.picNav li:nth-child(2){
+  background:linear-gradient(
+    rgba(0, 0, 255, 0.25),
+    rgba(0, 0, 255, 0.25)),
+    url('../assets/article-image-2.jpg');
+    background-size: cover;
+}
+
+.picNav li:nth-child(3){
+  background:linear-gradient(
+    rgba(0, 0, 255, 0.25),
+    rgba(0, 0, 255, 0.25)),
+    url('../assets/article-image-3.jpg');
+    background-size: cover;
+}
+
+.picNav li:nth-child(4){
+  background:linear-gradient(
+    rgba(0, 0, 255, 0.25),
+    rgba(0, 0, 255, 0.25)),
+    url('../assets/article-image-4.jpg');background-size: cover;
+}
+
+.picNav li:nth-child(1):hover{
+  background-image:url('../assets/article-image-1.jpg');
+  background-size:cover;
+}
+
+.picNav li:nth-child(2):hover{
+  background-image:url('../assets/article-image-2.jpg');
+  background-size:cover;
+}
+
+.picNav li:nth-child(3):hover{
+  background-image:url('../assets/article-image-3.jpg');
+  background-size:cover;
+}
+
+.picNav li:nth-child(4):hover{
+  background-image:url('../assets/article-image-4.jpg');
+  background-size:cover;
+}
+
+.postOneText{
+  margin: 88% 0 0 8%;
+  @include postTextStyle;
+}
+
+.postTwoText{
+  margin: 88% 0 0 8%;
+  @include postTextStyle;
+}
+
+.postThreeText{
+  margin: 81% 0 0 8%;
+  @include postTextStyle;
+}
+
+.postFourText{
+  margin: 88% 0 0 8%;
+  @include postTextStyle;
 }
