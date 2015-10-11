@@ -194,7 +194,8 @@ figure figcaption {
   font-size: 4.5em;
   font-weight: bolder;
   color: #083452;
-  padding: 3% 0 0 0; }
+  padding: 3% 0 0 0;
+  height: 9.69em; }
 
 .picNav {
   padding: 0%;
@@ -270,3 +271,22 @@ figure figcaption {
   font-family: 'Oswald', sans-serif;
   text-shadow: 2px 1px 6px white;
   color: black; }
+
+footer {
+  padding: 0;
+  height: 9em;
+  background: #083452;
+  float: left;
+  padding-top: 3%; }
+
+footer section {
+  color: #A3B4C0; }
+
+footer li {
+  color: #A3B4C0;
+  display: inline-block;
+  list-style: none;
+  font-size: 1.3em; }
+
+footer section span {
+  padding-left: 3%; }
